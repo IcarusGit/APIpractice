@@ -47,7 +47,8 @@ exports.index = async (req, res) => {
         console.log("=========================================")
         console.log(verificationLink)
         console.log("=========================================")
-        await sendEmail(req.body.email, verificationLink)
+        // if you await sendEmail() then you would wait longer before you res.send so just leave like this
+        sendEmail(req.body.email, verificationLink)
 
         return res.send({
             message: "Registration done. Check your email for verification.",

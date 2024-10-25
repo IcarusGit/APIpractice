@@ -5,6 +5,5 @@ DB.mongoose = mongoose
 DB.url = "mongodb+srv://basteforcoding123:a4Kl9C8qyv22LjCV@myfirstcluster.qoarsvd.mongodb.net/?retryWrites=true&w=majority"
 DB.registeredUsers = require('./registeredUsers')
 DB.registerToken = require('./registerToken')
-DB.blacklistedTokens = require('./blacklistedTokens')
 
 module.exports = DB
